@@ -3,7 +3,7 @@
 #include <stdlib.h>
 int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
-  int y;
+  double y;
   if( x < 0 ){
     exit(1);
   }
@@ -21,7 +21,6 @@ int main(void)
     x[i] = myRoot((double)i);
     i++;
   }
-  printf("test");
   printf("x[0]=%f\n", x[0]);
   printf("x[1]=%f\n", x[1]);
   printf("x[2]=%f\n", x[2]);
