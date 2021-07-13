@@ -16,6 +16,7 @@ int main(void)
   int i;
   double *x = (double *)malloc(sizeof(double) * 100);
 
+  i = 0;
   while( i <= 100 ){
     x[i] = myRoot((double)i);
     i++;
